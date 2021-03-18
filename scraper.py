@@ -44,5 +44,6 @@ for link in anchor:
 
 # writing data to csv file using pandas library
 data_df = pd.DataFrame.from_dict(csvData, orient='index', columns=['textContent', 'link'])
-data_df.to_csv('data.csv')
+name_of_files = input("enter then file name: ")
+data_df.to_csv(name_of_files+'.csv')
 print('scrapping done')
